@@ -1,0 +1,197 @@
+@import url("./fonts/bluunext/stylesheet.css");
+
+.primary-overlay {
+  /* background: rgba(80, 57, 90, 0.7); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-header {
+  background: url(../src/components/layout/images/hogwarts.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  color: #ffffff;
+  position: relative;
+}
+
+.header-text {
+  font-family: "MagicSchoolOne";
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+.spinner {
+  padding: 50px;
+  text-align: center;
+}
+
+footer i {
+  color: red;
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.qna-container {
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.title-text {
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-family: "Bluu Next";
+}
+
+.progress-text {
+  margin-top: 0;
+}
+
+.question-container {
+  padding-bottom: 15px;
+}
+
+.btn-next-container {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.answers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1px;
+}
+
+.answer-choices {
+  width: 90%;
+  margin-bottom: 15px;
+  background-color: #37474f;
+  color: #fff;
+  padding: 0;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.answer-choices:hover {
+  background-color: #fffde7;
+  color: #000;
+}
+
+.toast-correct {
+  background-color: #a5d6a7;
+  color: #000;
+  font-weight: bold;
+}
+
+.toast-incorrect {
+  background-color: #c62828;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.score-container {
+  border: solid 7px #41403e;
+  width: 450px;
+  height: 600px;
+  margin-top: 100px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #f0f0d8;
+  font-family: "Bluu Next";
+  color: #41403e;
+}
+
+.score-details {
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.score-heading {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.score-item {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.score-item-result {
+  font-size: 25px;
+}
+
+.score-reward {
+  font-size: 25px;
+  padding: 40px 0;
+}
+
+.scorecard-footer {
+  background-color: #41403e;
+  color: #f0f0d8;
+  font-size: 22px;
+}
+
+.scorecard-footer:hover {
+  color: #41403e;
+  background-color: #f0f0d8;
+}
+
+@media (max-width: 900px) {
+  .header-text {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .qna-container {
+    margin-top: 20px;
+  }
+
+  .answers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-choices {
+    font-size: 12px;
+    word-wrap: normal;
+  }
+
+  .question-container {
+    padding: 5px 0;
+  }
+
+  .score-container {
+    margin-top: 50px;
+    width: 350px;
+    height: 600px;
+  }
+
+  .score-reward {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .scorecard-footer {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Bluu Next";
+  src: url("BluuNext-Bold.eot");
+  src: local("Bluu Next Bold"), local("BluuNext-Bold"),
+    url("BluuNext-Bold.eot?#iefix") format("embedded-opentype"),
+    url("BluuNext-Bold.woff2") format("woff2"),
+    url("BluuNext-Bold.woff") format("woff"),
+    url("BluuNext-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bluu Next";
+  src: url("BluuNext-BoldItalic.eot");
+  src: local("Bluu Next Bold Italic"), local("BluuNext-BoldItalic"),
+    url("BluuNext-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("BluuNext-BoldItalic.woff2") format("woff2"),
+    url("BluuNext-BoldItalic.woff") format("woff"),
+    url("BluuNext-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bluu Next";
+  src: url("BluuNext-Titling.eot");
+  src: local("Bluu Next Titling"), local("BluuNext-Titling"),
+    url("BluuNext-Titling.eot?#iefix") format("embedded-opentype"),
+    url("BluuNext-Titling.woff2") format("woff2"),
+    url("BluuNext-Titling.woff") format("woff"),
+    url("BluuNext-Titling.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HarryPotter";
+  src: url("HarryPotter-ov4z.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MagicSchoolOne";
+  src: url("MagicSchoolOne.ttf");
+  font-weight: bold;
+  font-style: normal;
+}

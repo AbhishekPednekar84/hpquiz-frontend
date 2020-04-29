@@ -10,7 +10,6 @@ import {
   GET_QUESTIONS,
   QUESTIONS_ERROR,
   SET_ANSWER,
-  // CORRECT_ANSWER_CHOICE,
   INCREMENT_QUESTION,
   INCREMENT_SCORE,
 } from "../Types";
@@ -23,7 +22,6 @@ const QuizState = (props) => {
     currentQuestion: 0,
     currentAnswer: "",
     activateQuizFlag: false,
-    // correctAnswerChoice: "",
     error: "",
     score: 0,
     loading: false,
@@ -48,7 +46,7 @@ const QuizState = (props) => {
     setLoading();
 
     try {
-      const res = await axios.get("https://api.yahpq.rocks/api/books");
+      const res = await axios.get("/api/books");
       // console.log(res.data);
       dispatch({ type: GET_TITLE, payload: res.data });
     } catch (error) {
@@ -62,20 +60,13 @@ const QuizState = (props) => {
     setLoading();
 
     try {
-      const res = await axios.get(
-        `https://api.yahpq.rocks/api/questions/?book_id=${bookId}`
-      );
+      const res = await axios.get(`/api/questions/?book_id=${bookId}`);
       dispatch({ type: GET_QUESTIONS, payload: res.data });
     } catch (error) {
       error.message = "Error retrieving questions";
       dispatch({ type: QUESTIONS_ERROR, payload: error.message });
     }
   };
-
-  // Get correct answer ********************
-  // const getCorrectAnswerChoice = (choice) => {
-  //   dispatch({ type: CORRECT_ANSWER_CHOICE, payload: choice });
-  // };
 
   // Activate quiz flag
   const activateQuiz = () => {
@@ -108,7 +99,6 @@ const QuizState = (props) => {
         questions: questions,
         answerSubmitted: answerSubmitted,
         activateQuizFlag: activateQuizFlag,
-        // correctAnswerChoice: correctAnswerChoice,
         currentQuestion: currentQuestion,
         currentAnswer: currentAnswer,
         error: error,
@@ -120,7 +110,6 @@ const QuizState = (props) => {
         incrQuestion,
         incrScore,
         activateQuiz,
-        // getCorrectAnswerChoice,
       }}
     >
       {props.children}

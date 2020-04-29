@@ -81,9 +81,6 @@ const AnswerItem = (props) => {
           style={setStyle(letter)}
           onClick={handleClick}
         >
-          {/* // <span className="blue-grey lighten-2 black-text left answer-choices-slno">
-          //  {letter}
-          // </span>{" "} */}
           {answer}
         </button>
       </div>

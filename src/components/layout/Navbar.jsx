@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <header className="main-header">
       <div className="primary-overlay">
-        {/* <div className="navbar-fixed"> */}
         <nav className="transparent">
           <div className="container">
             <div className="nav-wrapper">
@@ -22,7 +21,6 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        {/* </div> */}
 
         <div className="showcase container">
           <div className="row">

@@ -46,7 +46,7 @@ const QuizState = (props) => {
     setLoading();
 
     try {
-      const res = await axios.get("/api/books");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/books`);
       // console.log(res.data);
       dispatch({ type: GET_TITLE, payload: res.data });
     } catch (error) {
@@ -60,7 +60,9 @@ const QuizState = (props) => {
     setLoading();
 
     try {
-      const res = await axios.get(`/api/questions/?book_id=${bookId}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_URL}/api/questions/?book_id=${bookId}`
+      );
       dispatch({ type: GET_QUESTIONS, payload: res.data });
     } catch (error) {
       error.message = "Error retrieving questions";

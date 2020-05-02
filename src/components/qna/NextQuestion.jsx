@@ -35,7 +35,7 @@ const NextQuestion = () => {
       </div>
       <div className="container btn-next-container s12">
         <a href="/" className="btn red darken-3">
-          End Quiz
+          End Quiz & Exit
         </a>
       </div>
     </Fragment>

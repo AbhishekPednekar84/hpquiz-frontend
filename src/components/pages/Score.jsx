@@ -14,6 +14,9 @@ const Score = () => {
     "a packet of Bertie Botts Every Flavor Beans",
     "a slice of Cauldron Cake",
     "a piece of Lupin's Chocolate",
+    "some Pumpkin Pasties",
+    "a packet of Droobles",
+    "a Licorice Wand",
   ];
 
   if (!activateQuizFlag) {
@@ -34,7 +37,7 @@ const Score = () => {
             Percentage correct...{" "}
             <span className="score-item-result"> {percentage}%</span>
           </p>
-          {percentage > 80 ? (
+          {percentage >= 80 ? (
             <p className="score-reward">
               Good Show! You deserve{" "}
               {giftArray[Math.floor(Math.random() * giftArray.length)]}

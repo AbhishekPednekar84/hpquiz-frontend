@@ -18,7 +18,12 @@ This repository contains the `React.js` frontend code for the **[yahpq.rocks](ht
 ### Testing a production build locally
 1. Create the build - `npm run build`
 2. Run the build - `node server.js`
-   
+---  
 ## Mini production checklist
 1. Verify the backend api endpoint in `/src/config.js`
 2. In `server.js`, ensure that the path to the `static` folder is `app.use(express.static(path.join(__dirname, "./")));`
+---
+## Screenshots
+
+<p align="center"><img src="https://github.com/AbhishekPednekar84/hpquiz-frontend/blob/master/assets/yahpq.jpg" alt="Home"></p>
+<p align="center"><img src="https://github.com/AbhishekPednekar84/hpquiz-frontend/blob/master/assets/quiz.jpg" alt="Home"></p>

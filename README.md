@@ -5,19 +5,24 @@
 This repository contains the `React.js` frontend code for the **[yahpq.rocks](https://yahpq.rocks)** website.
 
 ## Creating a local setup
-### Backend setup
-1. Clone the repository for the backend [Django REST api](https://github.com/AbhishekPednekar84/hpquiz-rest-api) and follow the setup instructions
+### Backend
+1. Clone the repository for the backend [Django REST API](https://github.com/AbhishekPednekar84/hpquiz-rest-api) and follow the setup instructions
 
-### Frontend setup
-1. Install `node.js` from [nodejs.org](https://nodejs.org/en/) (if needed)
-2. Clone this repository - `git clone https://github.com/AbhishekPednekar84/hpquiz-frontend`
-3. Install dependencies from `package.json` - `npm install`
+### Frontend
+1. Install `node.js` from [nodejs.org](https://nodejs.org/en/) (if needed). This website uses **v12.13.1**.
+2. Clone the current repository using `git clone https://github.com/AbhishekPednekar84/hpquiz-frontend`
+3. Install dependencies from `package.json` using the command `npm install`
 4. Verify the backend api endpoint in `/src/config.js`
-5. Run the application locally - `npm start`
+5. Run the application locally using `npm start`
+
+At this point, assuming that the backend is running in a separate terminal window, the website should be accessible at **http://localhost:3000**.
 
 ### Testing a production build locally
-1. Create the build - `npm run build`
-2. Run the build - `node server.js`
+1. Create the build using `npm run build`
+2. Run the build using the command `node server.js`
+
+Assuming that the backend is up and running, the website should be accessible at **http://localhost:3000**.
+
 ---  
 ## Mini production checklist
 1. Verify the backend api endpoint in `/src/config.js`

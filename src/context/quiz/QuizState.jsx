@@ -2,6 +2,8 @@ import React, { useReducer } from "react";
 import QuizContext from "./quizContext";
 import quizReducer from "./quizReducer";
 import axios from "axios";
+import { API_ENDPOINT } from "../../config";
+
 import {
   GET_TITLE,
   SET_LOADING,
@@ -33,7 +35,6 @@ const QuizState = (props) => {
     questions,
     answerSubmitted,
     activateQuizFlag,
-    // correctAnswerChoice,
     currentQuestion,
     currentAnswer,
     error,
@@ -46,8 +47,7 @@ const QuizState = (props) => {
     setLoading();
 
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/books`);
-      // console.log(res.data);
+      const res = await axios.get(`${API_ENDPOINT}/api/books`);
       dispatch({ type: GET_TITLE, payload: res.data });
     } catch (error) {
       error.message = "Error retrieving titles";
@@ -61,7 +61,7 @@ const QuizState = (props) => {
 
     try {
       const res = await axios.get(
-        `${process.env.REACT_APP_API_URL}/api/questions/?book_id=${bookId}`
+        `${API_ENDPOINT}/api/questions/?book_id=${bookId}`
       );
       dispatch({ type: GET_QUESTIONS, payload: res.data });
     } catch (error) {

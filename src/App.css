@@ -1,5 +1,9 @@
 @import url("./fonts/bluunext/stylesheet.css");
 
+* {
+  box-sizing: border-box;
+}
+
 .primary-overlay {
   /* background: rgba(80, 57, 90, 0.7); */
   position: absolute;
@@ -84,7 +88,7 @@ footer i {
   background-color: #37474f;
   color: #fff;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   overflow-wrap: break-word;
 }
 
@@ -157,7 +161,7 @@ footer i {
   background-color: #f0f0d8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .header-text {
     font-size: 70px;
     text-align: center;

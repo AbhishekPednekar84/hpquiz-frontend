@@ -1,1 +1,1 @@
-export const API_ENDPOINT = "https://api.yahpq.rocks";
+export const API_ENDPOINT = "http://localhost:8000";

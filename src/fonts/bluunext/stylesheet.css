@@ -42,8 +42,9 @@
 }
 
 @font-face {
-  font-family: "MagicSchoolOne";
-  src: url("MagicSchoolOne.ttf");
-  font-weight: bold;
+  font-family: "Magic School One Regular";
   font-style: normal;
+  font-weight: normal;
+  src: local("Magic School One Regular"),
+    url("MagicSchoolOne.woff") format("woff");
 }

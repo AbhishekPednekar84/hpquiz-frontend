@@ -25,8 +25,8 @@
 }
 
 .header-text {
-  font-family: "MagicSchoolOne";
-  font-size: 100px;
+  font-family: "HarryPotter";
+  font-size: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +163,7 @@ footer i {
 
 @media (max-width: 1300px) {
   .header-text {
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
   }
 

@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
     <meta name="theme-color" content="#000000" />
     <link
       rel="stylesheet"
@@ -16,6 +20,32 @@
       crossorigin="anonymous"
     />
     <title>Yet Another Harry Potter Quiz</title>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Yet Another Harry Potter Quiz",
+          "url": "https://yahpq.rocks"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Yet Another Harry Potter Quiz",
+          "description": "A Harry Potter quiz based on all the published books for those die-hard Potter-heads!"
+        }
+      ]
+    </script>
+
+    <meta property="og:title" content="Yet Another Harry Potter Quiz" />
+    <meta property="og:url" content="https://yahpq.rocks" />
+    <meta property="og:type" content="game" />
+    <meta
+      property="og:description"
+      content="A Harry Potter quiz based on all the published books for those die-hard Potter-heads!"
+    />
+    <meta property="og:locale" content="en-us" />
   </head>
   <body>
     <div id="root"></div>

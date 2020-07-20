@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145611420-5"
+    ></script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "UA-145611420-5");
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta
@@ -9,6 +21,13 @@
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
     />
     <meta name="theme-color" content="#000000" />
+    <meta
+      itemscope
+      itemtype="https://schema.org/Game"
+      itemprop="gameItem"
+      name="description"
+      content="A quiz based on all eight Harry Potter books"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
